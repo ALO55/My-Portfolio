@@ -3,14 +3,25 @@
     margin: 0;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    background-color: black;
+@font-face {
+    src: url(fonts/IndieFlower-Regular.ttf);
+    font-family: indie;
 }
 
-#myPhoto {
+body {
+    font-family: indie, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: rgb(0, 6, 85);
+}
+
+#myPhoto, #meme {
     height: 300px;
+    width: 350px;
 }
 
 .header-text {
@@ -58,4 +69,36 @@ a .card > img {
     border-radius: 8px 8px 0 0;
 }
 
+footer {
+    background-color: rgb(0, 6, 85);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
 
+.about-me > p {
+    text-align: justify;
+}
+
+.icon {
+    fill: rgb(255, 255, 255);
+    width: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content:center ;
+}
+
+ul {
+    list-style: none;
+}
+
+footer > div > h4 {
+    margin-bottom: 10px;
+}
